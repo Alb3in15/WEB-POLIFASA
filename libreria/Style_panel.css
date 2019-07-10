@@ -1,0 +1,14 @@
+
+#Select_Cproducto{
+    width: 29.2em;
+}
+#Select_pro_detalles{
+    width: 29.2em;
+}
+.require {
+    color: #666;
+}
+label small {
+    color: #999;
+    font-weight: normal;
+}
