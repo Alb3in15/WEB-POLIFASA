@@ -36,7 +36,7 @@
                         <a href="Paginas/Contactanos.html" class="nav-link">Contáctanos</a>
                     </li>
                     <li class="nav-item" >
-                        <a class="nav-link" href="Paginas/Blog.php">Blog Poli</a>
+                        <a class="nav-link" href="Paginas/Blog.php">Blog</a>
                     </li>
                 </ul>
             </div>
