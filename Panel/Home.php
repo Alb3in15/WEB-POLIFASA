@@ -29,6 +29,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="../libreria/maxLength/maxLength.js"> </script>          
     <script src="../Js/panel.js"></script>
     <script src="../Js/Funcion_panel.js"> </script>
     <script src="../Js/Capturar_datos.js"></script>
@@ -307,6 +308,7 @@
                         <div class="form-group">
                             <label for="inputAddress2">Descripcion</label>
                             <textarea class="form-control" name="txt_descripcion" id="txt_descripcion" rows="8" cols="80"></textarea>
+                            <p id="limite_descripcion" class="ml-auto"></p> <em>/300</em>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-md-12">

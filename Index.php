@@ -137,14 +137,10 @@
                 </p>
                 <a href="Paginas/acercaDe.html" class="btn btn-primary">Ver más</a>
             </div>
-            <div class="productos col-lg-2 col-sm-2">
-                <img clas="img-fluid" src="Src/contenido/27858566_816664545202984_8942846914600293342_n.jpg" alt="">
+            <div class="productos col-lg-6 col-sm-6">
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/uU5N_7ur1n0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <div class="productos col-lg-2 col-sm-2">
-                <img clas="img-fluid" src="Src/contenido/27972474_816664558536316_6728418650704489002_n.jpg" alt="">
-            </div>
-            <div class="productos col-lg-2 col-sm-2">
-                <img clas="img-fluid img-thumbnail" src="Src/contenido/27972769_816664608536311_4985329938412489897_n.jpg" alt="">
             </div>
         </div>
         <hr class="my-4">
