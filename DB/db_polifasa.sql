@@ -62,7 +62,7 @@ select id_productos, pro_nombre from poli_productos;
 SELECT pro.pro_imagen,pro.id_productos,pro.pro_nombre, pro.pro_precio, ROUND(sum(pro_precio - (pro_precio * (pro_desuento/100))),2) as PrecioP, pro.pro_descripcion,de.id_productos, de.cara_uno,de.cara_dos,de.cara_tres,de.cara_cuatro
                                     FROM poli_productos pro 
                                     INNER JOIN poli_pro_carac de  on pro.id_productos = de.id_productos 
-                                    WHERE pro.id_productos='5' ;
+                                    WHERE pro.id_productos='12' ;
                                     
                                     
 SELECT * , ROUND(sum(pro_precio - (pro_precio * (pro_desuento/100))),2) as PrecioP FROM poli_productos WHERE id_categoria = '12' group by id_productos;
@@ -72,3 +72,12 @@ SELECT pro.pro_imagen,pro.id_productos,pro.pro_nombre, pro.pro_precio, pro.pro_d
                         FROM poli_productos pro
                         INNER JOIN poli_pro_carac de  on pro.id_productos = de.id_productos
                         WHERE pro.id_productos='12';
+                        
+SELECT cara_id,id_productos FROM poli_pro_carac WHERE cara_id  in (SELECT id_productos FROM poli_productos) !=id_productos;
+
+SELECT id_productos FROM poli_productos WHERE id_productos in (SELECT  id_productos FROM poli_pro_carac) = id_productos ; 
+
+Select id_productos from poli_productos where not exists (select id_productos from poli_pro_carac where id_productos = id_productos);
+
+SELECT id FROM A WHERE id in (SELECT id FROM B) WHERE id = 
+IF ()
