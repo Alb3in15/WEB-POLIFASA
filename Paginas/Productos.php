@@ -32,11 +32,13 @@
   <?php
   require_once("../php/db.php");
     $conectar = conexion();
+    $id_categoria = (empty($_GET['categoria'] ) ? NULL : $_GET['categoria']) ;
    ?>
     <!-- Navigation-->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top ">
         <div class="container-fluid logo">
             <a href="Index.php" class="navbar-brand"><img src="../Src/footer.png" alt=""></a>
+            <h4 class="display-5 mt-2" style="color: #144CA2 ;font-weight: 800;">POLIFASA</h4>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
@@ -50,13 +52,10 @@
                         <a href="Productos.php" class="nav-link active text-danger ">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="acercaDe.html" class="nav-link">Acerca de</a>
+                        <a href="acercaDe.php" class="nav-link">Acerca de</a>
                     </li>
                     <li class="nav-item">
-                        <a href="Contactanos.html" class="nav-link">Contáctanos</a>
-                    </li>
-                    <li class="nav-item" >
-                        <a class="nav-link" href="Blog.php">Blog</a>
+                        <a href="Contactanos.php" class="nav-link">Contáctanos</a>
                     </li>
                 </ul>
             </div>
@@ -68,7 +67,7 @@
 
         $categoria = new rescatar_categoria();
 
-        $matrizCategoria = $categoria->get_categoria();
+        $matrizCategoria = $categoria->get_categoria($id_categoria);
 
     ?>
     <?php
@@ -117,7 +116,6 @@
                 </div>
           <?php
         }
-        echo "<h1>".$ver[0]."</h1>";
         ?>
   </div>
   </div>
@@ -152,7 +150,6 @@
                     <hr class="ligth">
                     <h5>Lugar</h5>
                     <hr class="ligth">
-                    <p>Ciudad : Milagro</p>
                     <p>Ciudad : Milagro</p>
                 </div>
                 <div class="col-12">

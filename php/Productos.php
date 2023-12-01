@@ -8,15 +8,21 @@
         public function __construct (){
             require_once("Conexion.php");
 
-            $db=Conectar();
+            $this->db=Conectar();
 
             $this->categoria=array();
         }
-        public function get_categoria(){
+        public function get_categoria($id_categoria){
 
-          $db=Conectar();
-          $sql = "SELECT * FROM poli_categoria";
-            $consulta = $db->query($sql);
+          $this->db=Conectar();
+
+          if(isset($id_categoria)){
+            $sql = "SELECT * FROM poli_categoria WHERE id_categoria = $id_categoria";
+          }else {
+            $sql = "SELECT * FROM poli_categoria";
+          }
+
+            $consulta = $this->db->query($sql);
             
             while ($fila=$consulta->fetch(PDO::FETCH_ASSOC)){
                 $this->categoria[]=$fila;
@@ -33,15 +39,15 @@
         public function __construct (){
             require_once("Conexion.php");
 
-            $db=Conectar();
+            $this->db=Conectar();
 
             $this->productos=array();
         }
         public function get_productos(){
 
-          $db=Conectar();
+          $this->db=Conectar();
           $sql = "SELECT * FROM poli_productos WHERE id_categoria = '$Dato'";
-            $consulta = $db->query($sql);
+            $consulta = $this->db->query($sql);
             
             while ($fila=$consulta->fetch(PDO::FETCH_ASSOC)){
                 $this->productos[]=$fila;

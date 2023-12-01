@@ -4,7 +4,12 @@ function preguntarSiNo(id){
 	                , function(){ alertify.error('Accion Cancelada')});
 
 }
+function preguntarSiNoProducto(id){
+	alertify.confirm('Eliminar registro', 'Desea Eliminar este registro?...',
+										function() { eliminarProducto(id) }
+	                , function(){ alertify.error('Accion Cancelada')});
 
+}
 function eliminarimgSlider(id){
 	cadena= "id=" + id;
 			$.ajax({
@@ -22,6 +27,23 @@ function eliminarimgSlider(id){
 					}
 			});
 }
+function eliminarProducto(id){
+	cadena= "id=" + id;
+			$.ajax({
+					type: "POST",
+					url:"../php/Producto/eliminar_producto.php",
+					data: cadena,
+					success:function(r){
+						if(r==0){
+								alertify.error("Fallo el Servidor :( )");
+						}else{
+                            //alert(r);
+                            alertify.success("Los Datos an sido Eliminado :) ");
+                            window.location.href='Panel_Productos.php';
+						}
+					}
+			});
+}
 function updateSliderImg(matrizImagen){
 	d=matrizImagen.split('||');
 	$('#id_update_img').val(d[0]);
@@ -29,6 +51,53 @@ function updateSliderImg(matrizImagen){
     $('#up_tipo_img').val(d[2]);
 }
 
+function updateSliderImg(matrizImagen){
+	d=matrizImagen.split('||');
+	$('#id_update_img').val(d[0]);
+	$('#up_titulo_img').val(d[1]);
+    $('#up_tipo_img').val(d[2]);
+}
+function actualizar_registro_producto(id){
+	cadena= "id=" + id;
+			$.ajax({
+					type: "POST",
+					url:"../php/Producto/obtener_datos_producto.php",
+					data: cadena,
+                    dataType: "json",
+					success:function(r){
+						if(r==0){
+								alertify.error("Fallo el Servidor :( )");
+						}else{
+                            
+                            rellenar_datos_productos(r);                            
+						}
+					},
+                    error:function name(e) {
+                     console.log(e);   
+                    }
+			});
+}
+function rellenar_datos_productos(datos_producto){
+    $('#actualizar_id_producto').val(datos_producto['id']);
+    $('#actualizar_Select_Cproducto').val(datos_producto['id_categoria']);
+ 	$('#actualizar_txt_producto').val(datos_producto['nombre']);
+	$('#actualizar_txt_precio').val(datos_producto['precio']);
+    $('#actualizar_txt_descuento').val(datos_producto['descuento']);
+    $('#actualizar_Select_disponibilidad').val(datos_producto['estado']);
+    $('#actualizar_txt_fecha').val(datos_producto['fecha']);
+    $('#actualizar_txt_descripcion').val(datos_producto['descripcion']);
+    $('#actualizar_imagen_pro').val(datos_producto['img']); 
+}
+function limpiar_datos_productos(){
+    
+    $('#actualizar_txt_producto').val();
+	$('#actualizar_txt_precio').val();
+    $('#actualizar_txt_descuento').val();
+    $('#actualizar_Select_disponibilidad').val();
+    $('#actualizar_txt_fecha').val();
+    $('#actualizar_txt_descripcion').val();
+    $('#actualizar_imagen_pro').val(); 
+}
 /*FUNCION PARA AGREGAR LOS DATOS DE PRODUCTOS */
 function agregarProductos(Select_Cproducto,txt_producto,txt_precio,txt_descuento,Select_disponibilidad,txt_fecha,txt_descripcion,imagen_pro){
     cadena= "Select_Cproducto=" + Select_Cproducto +

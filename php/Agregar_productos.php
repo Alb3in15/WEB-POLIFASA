@@ -8,7 +8,7 @@ $conexion = conexion();
     $Select_Cproducto= $_POST['Select_Cproducto']; 
     $txt_producto= $_POST['txt_producto']; 
     $txt_precio= $_POST['txt_precio'];
-    $txt_descuento= $_POST['txt_descuento'];
+    $txt_descuento= $_POST['txt_descuento'] == null ? 0 : $_POST['txt_descuento'] ;
     $Select_disponibilidad= $_POST['Select_disponibilidad'];
     $txt_fecha= $_POST['txt_fecha']; 
     $txt_descripcion= $_POST['txt_descripcion'];
@@ -54,7 +54,7 @@ $conexion = conexion();
             if ($result)
             {
                 //header("location:../../Panel/Home.php");
-                 echo "<script> alert ('Los datos se an guardado Correctamente.'); window.location.href='../Panel/Home.php'; </script>" ;
+                 echo "<script> alert ('Los datos se an guardado Correctamente.'); window.location.href='../Panel/Panel_Productos.php'; </script>" ;
                 // echo "El archivo ha sido copiado exitosamente.";
             }
             else

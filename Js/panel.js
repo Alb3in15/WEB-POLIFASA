@@ -33,7 +33,7 @@ $(".custom-file-input").on("change", function() {
 });
 
 $(function(){
-$("#txt_descripcion").maxLength(300, {
+$("txt_descripcion").maxLength(300, {
 showNumber: "#limite_descripcion", 
 revert: true
 });

@@ -18,6 +18,7 @@
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top ">
         <div class="container-fluid logo">
             <a href="Index.php" class="navbar-brand"><img src="Src/footer.png" alt=""></a>
+            <h4 class="display-5 mt-2" style="color: #144CA2 ;font-weight: 800;">POLIFASA</h4>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
             </button>
@@ -30,13 +31,10 @@
                         <a href="Paginas/Productos.php" class="nav-link">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="Paginas/acercaDe.html" class="nav-link">Acerca de</a>
+                        <a href="Paginas/acercaDe.php" class="nav-link">Acerca de</a>
                     </li>
                     <li class="nav-item">
-                        <a href="Paginas/Contactanos.html" class="nav-link">Contáctanos</a>
-                    </li>
-                    <li class="nav-item" >
-                        <a class="nav-link" href="Paginas/Blog.php">Blog</a>
+                        <a href="Paginas/Contactanos.php" class="nav-link">Contáctanos</a>
                     </li>
                 </ul>
             </div>
@@ -129,7 +127,7 @@
         <hr class="my-4">
     </div>
     <!--  Two column Section-->
-    <div class="container-fluid padding">
+<!--     <div class="container-fluid padding">
         <div class="row padding">
             <div class="col-lg-6">
                 <h2>Nuestro Objetivo...</h2>
@@ -144,7 +142,7 @@
             </div>
         </div>
         <hr class="my-4">
-    </div>
+    </div> -->
     <!-- Fixed background-->
 
     <!--  Emoji Section-->
@@ -166,7 +164,7 @@
                     <div class="card-body">
                         <h4 class="card-title">Carteras personalizadas</h4>
                         <p class="card-text">Dependiendo el tamaño el precio va de 8$ en adelante como le gusta a nuestro bolsillo no te quedes sin la tuya y realiza tu pedido y nosotros lo diseñamos a tu gusto✔✔.</p>
-                        <a href="Paginas/Sub_page/carteras.html" class="btn btn-outline-secondary">Ver Mas</a>
+                        <a href="Paginas/Productos.php?categoria=3" class="btn btn-outline-secondary">Ver Mas</a>
                     </div>
                 </div>
             </div>
@@ -176,7 +174,7 @@
                     <div class="card-body">
                         <h4 class="card-title">Camisetas/gorras personalizadas </h4>
                         <p class="card-text">Ya se acerca San Valentin, en esta época tan especial polifasa te trae promociones y descuentos para regalar a esa persona especial, no te quedes sin regalar algo bonito✔.</p>
-                        <a href="Paginas/Sub_page/camisetas.html" class="btn btn-outline-secondary">Ver Mas</a>
+                        <a href="Paginas/Productos.php?categoria=4" class="btn btn-outline-secondary">Ver Mas</a>
                     </div>
                 </div>
             </div>
@@ -186,7 +184,7 @@
                     <div class="card-body">
                         <h4 class="card-title">Útiles - escolares📚📓📓</h4>
                         <p class="card-text">No te olvides de cotizar tu lista de útiles con nosotros😉😉Aprovecha regalos y descuentos que te ofrecemos por la compra completa de tu lista, tenemos fabulosos jarros personalizados. </p>
-                        <a href="Sub_page/utiles.html" class="btn btn-outline-secondary">Ver Mas</a>
+                        <a href="Paginas/Productos.php?categoria=8" class="btn btn-outline-secondary">Ver Mas</a>
                     </div>
                 </div>
             </div>
@@ -196,17 +194,7 @@
                     <div class="card-body">
                         <h4 class="card-title">Jarros Personalizados</h4>
                         <p class="card-text">Pide tu jarro personalizado con tiempo😉contamos con precios al por mayor cualquier duda pregunté 😊también lo rellenamos con chocolates para que regales sonrisas a esa persona. especial</p>
-                        <a href="#" class="btn btn-outline-secondary">Ver Mas</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-2">
-                <div class="card">
-                    <img class="card-img-top" src="Src/productos/26993492_804690989733673_8708722008555053812_n.jpg" alt="">
-                    <div class="card-body">
-                        <h4 class="card-title">Servicios a domicilios</h4>
-                        <p class="card-text">Pedidos listos! Así es amigos tambien contamos con el servicio a domicilio sin ninguna recarga adicional... No te quedes sin tus jarros también tenemos jarros mágicos😍.</p>
-                        <a href="#" class="btn btn-outline-secondary">Ver Mas</a>
+                        <a href="Paginas/Productos.php?categoria=6" class="btn btn-outline-secondary">Ver Mas</a>
                     </div>
                 </div>
             </div>
@@ -216,7 +204,7 @@
                     <div class="card-body">
                         <h4 class="card-title">Almohadas Personalizadas</h4>
                         <p class="card-text">Almohadas personalizadas 😍 con fotos propias, diseños únicos, trabajos en sublimación 38x30cm de buena calidad en materiales antialérgicos. Al por mayor y menor precios.</p>
-                        <a href="#" class="btn btn-outline-secondary">Ver Mas</a>
+                        <a href="Paginas/Productos.php?categoria=7" class="btn btn-outline-secondary">Ver Mas</a>
                     </div>
                 </div>
             </div>
@@ -260,7 +248,6 @@
                     <hr class="ligth">
                     <h5>Lugar</h5>
                     <hr class="ligth">
-                    <p>Ciudad : Milagro</p>
                     <p>Ciudad : Milagro</p>
                 </div>
                 <div class="col-12">

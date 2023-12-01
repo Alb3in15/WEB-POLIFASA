@@ -17,10 +17,10 @@
                      <?php
                         $producto = $_REQUEST['productos'];
 
-                        $sql = "SELECT pro.pro_imagen,pro.id_productos,pro.pro_nombre, pro.pro_precio, pro.pro_desuento, ROUND(sum(pro_precio - (pro_precio * (pro_desuento/100))),2) as PrecioP,pro.pro_descripcion,pro.pro_disponibilidad,de.id_productos, de.cara_uno,de.cara_dos,de.cara_tres,de.cara_cuatro
+                        $sql = "SELECT pro.pro_imagen,pro.id_productos,pro.pro_nombre, pro.pro_precio, pro.pro_desuento, ROUND(sum(pro.pro_precio - (pro.pro_precio * (pro.pro_desuento/100))),2) AS PrecioP,pro.pro_descripcion,pro.pro_disponibilidad,de.id_productos, de.cara_uno,de.cara_dos,de.cara_tres,de.cara_cuatro
                         FROM poli_productos pro
                         INNER JOIN poli_pro_carac de  on pro.id_productos = de.id_productos
-                        WHERE pro.id_productos='$producto'";
+                        WHERE pro.id_productos='$producto' GROUP BY de.cara_id ";
 
 
 

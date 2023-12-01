@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="../Src/icono.png"/>
     <title>POLIFASA</title>
+    <link rel="shortcut icon" href="../Src/icono.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../libreria/Style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -19,6 +19,7 @@
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top ">
         <div class="container-fluid logo">
             <a href="Index.php" class="navbar-brand"><img src="../Src/footer.png" alt=""></a>
+            <h4 class="display-5 mt-2" style="color: #144CA2 ;font-weight: 800;">POLIFASA</h4>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
             </button>
@@ -31,56 +32,41 @@
                         <a href="Productos.php" class="nav-link">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="acercaDe.html" class="nav-link">Acerca de</a>
+                        <a href="acercaDe.php" class="nav-link active text-danger">Acerca de</a>
                     </li>
                     <li class="nav-item">
-                        <a href="Contactanos.html" class="nav-link active text-danger">Contáctanos</a>
-                    </li>
-                    <li class="nav-item" >
-                            <a class="nav-link" href="Blog.php">Blog</a>
+                        <a href="Contactanos.php" class="nav-link">Contáctanos</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- Welcome Section-->
-    <div class="container-fluid padding">
-        <div class="row welcome text-center">
-            <div class="col-12">
-                <h1 class="title display-4"> Ponte en Contacto</h1>
-            </div>
-             </div>
-            <hr>
-     <div class="container">
-         <div class="row">
-                    <div class="col-md-6">
-                <h3 class="text-center">Local Polifasa</h3>
-                <p class="leard" style="text-align: justify">Proporcionamos a todos los clientes unos excelentes servicios, productos de buena calidad, con precios competitivos, la incorporación de nuevos productos artículos y servicios requeridas por los clientes. Brindamos descuentos y reducir costos de productos para un beneficio directo al cliente.</p>
-            </div>
-            <div class="col-md-6">
-                <form action="correo.php" method="post">
-                    <div class="form-group">
-                        <label for="formGroupExampleInput">Nombre</label>
-                        <input type="text" class="form-control" name="nombre" id="formGroupExampleInput" placeholder="Nombre">
-                    </div>
-                     <div class="form-group">
-                        <label for="formGroupExampleInput">Email</label>
-                        <input type="text" class="form-control" name="email" id="formGroupExampleInput" placeholder="Email">
-                    </div>
 
-                     <div class="form-group">
-                        <label for="formGroupExampleInput">Asunto</label>
-                        <input type="text" class="form-control" name="asunto" id="formGroupExampleInput" placeholder="Asunto">
-                    </div>
-                     <div class="form-group">
-                        <label for="formGroupExampleInput">Mensaje</label>
-                        <textarea class="form-control" name="mensaje" id="exampleFormControlTextarea1" placeholder="Mensaje" rows="3"></textarea>
-                    </div>
-                 <button type="submit" style="width: 100%;" name="enviar" class="btn btn-danger">Enviar</button>
-                </form>
+    <!-- Welcome Section-->
+    <div class="container">
+        <div class="row padding">
+            <div class="col-lg-12">
+                <img style="width: 12em" class="rounded mx-auto d-block" src="Src/footer.png" alt="">
             </div>
-         </div>
-     </div>
+            <div class="col-lg-6" style="margin-top: 1.5em;">
+                    <h1 class="text-center text-danger">Misión</h1>
+                    <hr class="my-4">
+                <p class="lead">“Ser una empresa que provea productos personalizados con diseños únicos e innovadores, así como servicios diversos de impresión que ofrecen valores de calidad superiores, logrando la entera satisfacción de nuestros clientes.”
+                <br>
+            </div>
+            <div class="col-lg-6" style="margin-top: 1.5em;">
+                    <h1 class="text-center text-danger ">Visión</h1>
+                    <hr class="my-4">
+                <p class="lead">“Ser la mejor empresa de artículos de publicidad y personalización a nivel nacional e internacional agradando al cliente. Comprometidos con los socios, y con la sociedad cuidando la sostenibilidad del medio ambiente.”
+                </p>
+                <br>
+            </div>
+            <h2> Google Maps</h2>
+            <div class="col-lg-12">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d296.33957889184666!2d-79.5858434296334!3d-2.1328582602362136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d47e8f259e7bf%3A0x224f47c531f2fce9!2sSoluciones+Integrales+Milagro!5e0!3m2!1ses-419!2sec!4v1561719905440!5m2!1ses-419!2sec" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+
     </div>
     <!---------------------------------------Footer section--------------->
     <footer>
@@ -107,11 +93,10 @@
                     <h5>Lugar</h5>
                     <hr class="ligth">
                     <p>Ciudad : Milagro</p>
-                    <p>Ciudad : Milagro</p>
                 </div>
                 <div class="col-12">
                     <hr class="ligth-100">
-                     <h5>&copy; Propietario Polifasa</h5>
+                    <h5>&copy; Propietario Polifasa</h5>
                 </div>
             </div>
         </div>
