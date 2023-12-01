@@ -126,27 +126,6 @@
         </div>
         <hr class="my-4">
     </div>
-    <!--  Two column Section-->
-<!--     <div class="container-fluid padding">
-        <div class="row padding">
-            <div class="col-lg-6">
-                <h2>Nuestro Objetivo...</h2>
-                <p>Ser una empresa que provea productos personalizados con diseños únicos e innovadores, así como servicios diversos de impresión que ofrecen valores de calidad superiores, logrando la entera satisfacción de nuestros clientes.
-                </p>
-                <a href="Paginas/acercaDe.html" class="btn btn-primary">Ver más</a>
-            </div>
-            <div class="productos col-lg-6 col-sm-6">
-            <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/uU5N_7ur1n0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            </div>
-        </div>
-        <hr class="my-4">
-    </div> -->
-    <!-- Fixed background-->
-
-    <!--  Emoji Section-->
-
     <!--  Meet the team -->
     <div class="conatiner-fluid padding">
         <div class="row welcome text-center">
